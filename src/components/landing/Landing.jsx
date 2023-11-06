@@ -23,7 +23,7 @@ const handleNavigate = () => {
         <BigHead
           accessory="roundGlasses"
           body="chest"
-          circleColor="black"
+          circleColor="blue"
           clothing="shirt"
           clothingColor="black"
           eyebrows="raised"
