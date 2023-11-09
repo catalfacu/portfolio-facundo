@@ -4,6 +4,8 @@
     width: fit-content;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: black;
 }
 
@@ -16,5 +18,5 @@
 }
 
 .container button{
-    font-size: 5px;
+    font-size: 10px;
 }
