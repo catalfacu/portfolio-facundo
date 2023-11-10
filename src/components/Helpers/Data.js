@@ -16,6 +16,48 @@ const data = [
             Descripcion: "Bootcamp de programacíon web con el stack PERN."
         }
         ],
+        techs: [
+            {
+                nombre: "Javascript",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/js_ghxskh.png"
+            },
+            {
+                nombre: "Reactjs",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/Vector_h1jpf7.png"
+            },
+            {
+                nombre: "Bootstrap",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/Programming_logos_and_icons_by_hrhasnai_39_kenmyd.png"
+            },
+            {
+                nombre: "Nodejs",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/node_js_udtgmr.png"
+            },
+            {
+                nombre: "Redux",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/redux_qqq9x0.png"
+            },
+            {
+                nombre: "HTML",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/html_5_xbtn04.png"
+            },
+            {
+                nombre: "CSS",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/css_3_lejhsx.svg"
+            },
+            {
+                nombre: "PostgreSQL",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/Group_ttq3xc.png"
+            },
+            {
+                nombre: "Figma",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/figma_boylku.png"
+            },
+            {
+                nombre: "Visual Studio Code",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/vs_code_jkc2ci.png"
+            },
+        ]
     }   
 ];
 
