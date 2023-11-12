@@ -61,14 +61,17 @@ const data = [
         socialMedia: [
             {
                 name: "Instagram",
+                link:"https://www.instagram.com/facucata23/?hl=es-la",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/instagram_vyylqx.png"
             },
             {
                 name: "Linkedin",
+                link:"https://www.linkedin.com/in/facundo-cataldo-9a0031272/",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/linkedin_vcyzwv.png"
             },
             {
                 name: "Github",
+                link: "https://github.com/catalfacu",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/mark-github-24_thryex.png"
             },
         ]
