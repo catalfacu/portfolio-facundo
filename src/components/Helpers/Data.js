@@ -57,6 +57,20 @@ const data = [
                 nombre: "Visual Studio Code",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/vs_code_jkc2ci.png"
             },
+        ],
+        socialMedia: [
+            {
+                name: "Instagram",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/instagram_vyylqx.png"
+            },
+            {
+                name: "Linkedin",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/linkedin_vcyzwv.png"
+            },
+            {
+                name: "Github",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/mark-github-24_thryex.png"
+            },
         ]
     }   
 ];
