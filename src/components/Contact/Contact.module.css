@@ -52,10 +52,20 @@
     display: inline-flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 3rem;
+    gap: 2rem;
+    border: transparent;
+    background-color: black;
+    color: rgb(218, 189, 27);
+    border-radius: 2rem;
+    font-size: x-large;
+}
+
+.other_forms h5{
+    position: relative;
+    bottom: 40px
 }
 
 .social_container{
     display: inline-flex;
-    gap:2rem
+    gap:2rem;
 }
