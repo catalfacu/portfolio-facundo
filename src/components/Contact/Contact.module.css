@@ -15,17 +15,28 @@
 .form_container{
     width: 50%;
     height: 70%;
-    border: 1px solid red;
 
 }
 .form_container form{
     display: inline-flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .field{
     display: flex;
     flex-direction: column;
+}
+
+.other_forms{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.social_container{
+    display: inline-flex;
+    gap:2rem
 }
