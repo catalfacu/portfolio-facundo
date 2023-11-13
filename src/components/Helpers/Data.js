@@ -74,6 +74,20 @@ const data = [
                 link: "https://github.com/catalfacu",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/mark-github-24_thryex.png"
             },
+        ],
+        projects: [
+            {
+                name: "SPA Videogames",
+                link: "",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1699901505/portfolio/Screenshot_14_8_2023_11_13_43_vlcrjt.png",
+                description: "Proyecto individual creado para el bootcamp de Henry con el stack de tecnologias vistas durante el bootcamp, las mismas son JavaScript, React, Redux, NodeJs, Express, PostgreSQL, Sequelize.El proyecto cuenta con una temática de videojuegos, con funcionalidades la búsqueda de juegos mediante una searchBar, el filtrado y ordenado de los mismos y la creación de nuevos juegos que serán almacenados en una base de datos.En este proyecto me encargue al 100% en todos los aspectos, tanto backend como frontend,me ayudo mucho a reforzar los conocimientos adquiridos durante la cursada y a aprender cosas nuevas que fui aplicando a lo largo de este desarrollo."
+            },
+            {
+                name: "Sportzone App",
+                link: "https://frontsportzone.onrender.com/",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1699901502/portfolio/Linkedin_Covers_-_EDIT_-_editor_online_-_Google_Chrome_14_8_2023_01_11_24_jcc2f4.png",
+                description: "Sportzone es un e-commerce que desarrollamos en grupo con mis compañeros para el proyecto final del bootcamp de Henry. La app esta orientada hacia la venta de artículos deportivos y cuenta con funcionalidades como registro y login de usuarios, filtrado combinado de productos, carrito de compras, pasarela de pagos, dashboard de administradores entre otras."
+            }
         ]
     }   
 ];

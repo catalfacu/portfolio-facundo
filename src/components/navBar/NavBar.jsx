@@ -10,6 +10,7 @@ function navBar() {
         <NavLink to="/aboutme">Sobre mi</NavLink>
         <NavLink to="/studies">Estudios</NavLink>
         <NavLink to="/techs">Tecnologías</NavLink>
+        <NavLink to="/projects">Proyectos</NavLink>
         <NavLink to="/contact">Contacto</NavLink>
         <button>Descarga mi CV</button>
       </nav>
