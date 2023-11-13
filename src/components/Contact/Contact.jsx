@@ -9,6 +9,8 @@ const socialMedia = data[0].socialMedia;
   return (
     <div className={styles.container}>
       <h1 className>Comunicate Conmigo!</h1>
+
+      <main className={styles.contact_container}>
       <div className={styles.form_container}>
         <form action="submit" className={styles.form}>
           <label htmlFor="name">Nombre</label>
@@ -17,6 +19,7 @@ const socialMedia = data[0].socialMedia;
           <input type="text" />
           <label htmlFor="message">Mensaje</label>
           <textarea type="text" />
+          <button>Enviar</button>
         </form>
       </div>
 
@@ -49,9 +52,11 @@ const socialMedia = data[0].socialMedia;
               alt="calendar-logo"
             />
           </a>
-          <h2>Agenda Una Reunion!</h2>
+          <h5>Agenda Una Reunion!</h5>
         </div>
       </div>
+      </main>
+
     </div>
   );
 }
