@@ -13,12 +13,22 @@ const socialMedia = data[0].socialMedia;
       <main className={styles.contact_container}>
       <div className={styles.form_container}>
         <form action="submit" className={styles.form}>
+
+          <section className={styles.field}>
           <label htmlFor="name">Nombre</label>
           <input type="text" />
+          </section>
+
+          <section className={styles.field}>
           <label htmlFor="email">Email</label>
           <input type="text" />
+          </section>
+
+          <section className={styles.field}>
           <label htmlFor="message">Mensaje</label>
           <textarea type="text" />
+          </section>
+
           <button>Enviar</button>
         </form>
       </div>
