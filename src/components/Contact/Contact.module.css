@@ -32,6 +32,7 @@
     align-items: center;
     padding: 3rem;
     gap: 1rem;
+    font-size: large;
 }
 
 .form_container button{
