@@ -17,9 +17,11 @@ const projects = data[0].projects;
                 ? projects.map((el,index)=> {
                     return(
                         <article className={styles.project}>
+                            <div className={styles.project_text}>
                             <h2>{el.name}</h2>
-                            <img src={el.img} alt={el.name} />
                             <p>{el.description}</p>
+                            </div>
+                            <img src={el.img} alt={el.name} />
                         </article>
                     )
                 })
