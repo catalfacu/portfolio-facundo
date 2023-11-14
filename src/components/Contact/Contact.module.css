@@ -32,7 +32,11 @@
     align-items: center;
     padding: 3rem;
     gap: 1rem;
-    font-size: large;
+    font-size: smaller;
+}
+
+.form_container label{
+    font-size: larger;
 }
 
 .form_container button{
@@ -69,4 +73,8 @@
 .social_container{
     display: inline-flex;
     gap:2rem;
+}
+
+.other_forms img:hover{
+    border: 1px solid red
 }

@@ -1,16 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 import data from '../Helpers/Data';
+const SERVICE_ID = import.meta.env.VITE_REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
+
 
 function Contact() {
 const socialMedia = data[0].socialMedia;
-
 const { register,handleSubmit,formState: {errors} ,watch } = useForm();
+const form = useRef();
 
-const onSubmit = handleSubmit((data)=> {
-  console.log(data)
+const onSubmit = handleSubmit((data,e)=> {
+  console.log(data);
+  e.preventDefault();
+  emailjs.sendForm(SERVICE_ID,TEMPLATE_ID,form.current,PUBLIC_KEY)
+  .then((result)=>{
+    console.log(result.text);
+  }, (error)=> {
+    console.log(error.text);
+  });
 });
 
 
@@ -20,12 +31,13 @@ const onSubmit = handleSubmit((data)=> {
 
       <main className={styles.contact_container}>
         <div className={styles.form_container}>
-          <form className={styles.form} onSubmit={onSubmit}>
+          <form className={styles.form} onSubmit={onSubmit} ref={form}>
             <section className={styles.field}>
               <label htmlFor="name">Nombre</label>
-              <input 
+              <input
+              name="user_name" 
               type="text"
-              { ...register("name", {
+              { ...register("user_name", {
                 required: {
                   value: true,
                   message: "Su nombre es requerido"
@@ -38,14 +50,16 @@ const onSubmit = handleSubmit((data)=> {
               />
 
               {
-                errors.name && <span>{errors.name.message}</span>
+                errors.user_name && <span>{errors.user_name.message}</span>
               }
 
             </section>
 
             <section className={styles.field}>
               <label htmlFor="email">Email</label>
-              <input type="text"
+              <input
+              name="email" 
+              type="text"
               { ...register("email", {
                 required:{
                   value: true,
