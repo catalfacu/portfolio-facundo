@@ -39,6 +39,13 @@
     font-size: larger;
 }
 
+.form_container input,textarea{
+    border: 3px solid rgb(218, 189, 27);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2px;
+}
+
 .form_container button{
     font-size: x-large;
     width: fit-content;
@@ -46,6 +53,12 @@
     background-color:rgb(218, 189, 27);
     border-radius: 3rem;
     padding: 10px;
+}
+.form_container button:hover{
+    background-color: black;
+    color: whitesmoke;
+    border: 3px solid rgb(218, 189, 27);
+    box-shadow: 0px 0px 12px 5px rgb(218,189,27);
 }
 
 .field{
@@ -76,5 +89,9 @@
 }
 
 .other_forms img:hover{
-    border: 1px solid red
+-moz-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
+-webkit-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
+-o-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
+-ms-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
+transform: scale(1) rotate(-5deg) translateX(10px) translateY(-15px) skewX(0deg) skewY(0deg);
 }
