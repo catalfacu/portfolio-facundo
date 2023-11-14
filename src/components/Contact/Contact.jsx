@@ -91,7 +91,7 @@ const onSubmit = handleSubmit((data)=> {
               socialMedia.map((el, index) => {
                 return (
                   <article key={index} className={styles.social}>
-                    <a href={el.link}>
+                    <a href={el.link} target='blank'>
                       <img src={el.img} alt={el.name} />
                     </a>
                     <h5>{el.name}</h5>
