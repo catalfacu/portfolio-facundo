@@ -20,3 +20,7 @@ button{
     font-family: 'Honney And Raspberries';
     font-size: 40px;
 }
+
+a{
+    text-decoration: none;
+}

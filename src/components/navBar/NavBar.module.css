@@ -17,6 +17,7 @@
     align-items: center;
 }
 
-.container button{
-    font-size: 10px;
+.button_menu{
+    background: transparent;
+    border: transparent;
 }
