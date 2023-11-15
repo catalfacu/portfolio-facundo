@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.911);
 }
 
 .navbar{
@@ -15,10 +15,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding-right:10px;
 }
 
 .button_menu{
     background: transparent;
     border: transparent;
 }
+

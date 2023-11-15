@@ -12,10 +12,10 @@ import { MailPlus } from 'lucide-react';
 function navBar() {
   return (
     <div className={styles.container}>
+      <nav className={styles.navbar}>
       <button className={styles.button_menu}>
       <AlignJustify size={30} color="#7741c8" strokeWidth={2} />
       </button>
-      <nav className={styles.navbar}>
         <NavLink to="/aboutme">
           <User size={30} strokeWidth={2}/>
         </NavLink>
