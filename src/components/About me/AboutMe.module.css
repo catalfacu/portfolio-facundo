@@ -9,7 +9,8 @@
 
 .container h1{
     display: inline-block;
-    font-size: 50px;
+    font-size: 60px;
+    letter-spacing: 5px;
 }
 
 .text{
@@ -22,7 +23,7 @@
     background-color: rgb(7, 7, 7);
     color: rgb(218, 189, 27);
     font-size: larger;
-    padding: 2rem;
+    padding: 1rem;
     z-index: 2;
 }
 
@@ -36,5 +37,6 @@
     width: 20rem;
     border-radius: 50%;
     z-index: 1;
-    border: 8px solid black;
+    border: 5px solid #F5730A;
+    margin-top: 10px;
 }
