@@ -1,40 +1,44 @@
 .container{
     width: 100%;
     height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
     
 .avatar{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        grid-area: 1 / 4 / 3 / 6;
+        grid-area: 5 / 5 / 8 / 7;
         z-index: 2;
 }
 
 .texts { 
     display: inline-flex;
-    grid-area: 1 / 1 / 4 / 4;
+    grid-area: 3 / 2 / 1 / 5;
     font-size: xx-large;
     flex-direction: column;
     justify-content: first baseline;
-    padding: 20px;
 }
 .texts h2{
     font-size: x-large;
 }
 
 .frases { 
-    grid-area: 4 / 3 / 5 / 5; 
+    grid-area: 8 / 4 / 8 / 6;
     z-index: 1;
     height: fit-content;
     font-size: large;
-    border: 4px solid black;
+    border: 4px solid #F5730A;
     border-radius: 3rem;
     background-color: black;
-    color: rgb(228, 228, 16)
+    color: #F5730A;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .button{ 
@@ -48,4 +52,3 @@
     background-color: black;
     color: rgb(228, 228, 16);
 }
-

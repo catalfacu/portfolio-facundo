@@ -17,6 +17,7 @@ const handleNavigate = () => {
           Fullstack developer || Javascript || React || Node || Express ||
           PostgreSQL || Sequelize
         </h2>
+        <button onClick={handleNavigate}>Comencemos!</button>
       </div>
 
       <div className={styles.avatar}>
@@ -50,10 +51,7 @@ const handleNavigate = () => {
           <br /> solo necesitas ser apasionado." <br />- Ralph Johnson
         </p>
       </div>
-
-      <div className={styles.button}>
-        <button onClick={handleNavigate}>Comencemos!</button>
-      </div>
+      
     </div>
   );
 }
