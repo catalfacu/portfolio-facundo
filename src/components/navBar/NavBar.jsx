@@ -13,30 +13,60 @@ function navBar() {
   return (
     <div className={styles.container}>
       <nav className={styles.navbar}>
-      <button className={styles.button_menu}>
-      {/* <AlignJustify size={30} color="#7741c8" strokeWidth={2} /> */}
-      </button>
-        <NavLink to="/aboutme" title="Sobre Mi!🧑🏽‍💻">
-          <User size={30} strokeWidth={2}/>
-        </NavLink>
-        <NavLink to="/studies" title='Estudios👨🏽‍🎓'>
-          <LibraryBig size={30} strokeWidth={2}/>
-        </NavLink>
-        <NavLink to="/techs" title='Stack Tecnologico⚙️'>
-          <Wrench size={30} strokeWidth={2}/>
-        </NavLink>
-        <NavLink to="/projects" title='Proyectos📚'>
-          <AppWindow size={30} strokeWidth={2}/>
-        </NavLink>
-        <NavLink to="/contact" title='Contacto📩'>
-          <MailPlus size={30} strokeWidth={2}/>
-        </NavLink>
         <button className={styles.button_menu}>
-          <Download size={35} color='#7741c8' strokeWidth={2}/>
+          {/* <AlignJustify size={30} color="#7741c8" strokeWidth={2} /> */}
+        </button>
+        <NavLink
+          to="/aboutme"
+          title="Sobre Mi!🧑🏽‍💻"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <User size={30} strokeWidth={2} />
+        </NavLink>
+        <NavLink
+          to="/studies"
+          title="Estudios👨🏽‍🎓"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <LibraryBig size={30} strokeWidth={2} />
+        </NavLink>
+        <NavLink
+          to="/techs"
+          title="Stack Tecnologico⚙️"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <Wrench size={30} strokeWidth={2} />
+        </NavLink>
+        <NavLink
+          to="/projects"
+          title="Proyectos📚"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <AppWindow size={30} strokeWidth={2} />
+        </NavLink>
+        <NavLink
+          to="/contact"
+          title="Contacto📩"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <MailPlus size={30} strokeWidth={2} />
+        </NavLink>
+        <button className={styles.button_menu} title="Descarga mi CV">
+          <Download size={35} color="#7741c8" strokeWidth={2} />
         </button>
       </nav>
     </div>
-  )
+  );
 }
 
 export default navBar
