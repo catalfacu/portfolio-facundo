@@ -14,21 +14,21 @@ function navBar() {
     <div className={styles.container}>
       <nav className={styles.navbar}>
       <button className={styles.button_menu}>
-      <AlignJustify size={30} color="#7741c8" strokeWidth={2} />
+      {/* <AlignJustify size={30} color="#7741c8" strokeWidth={2} /> */}
       </button>
-        <NavLink to="/aboutme">
+        <NavLink to="/aboutme" title="Sobre Mi!🧑🏽‍💻">
           <User size={30} strokeWidth={2}/>
         </NavLink>
-        <NavLink to="/studies">
+        <NavLink to="/studies" title='Estudios👨🏽‍🎓'>
           <LibraryBig size={30} strokeWidth={2}/>
         </NavLink>
-        <NavLink to="/techs">
+        <NavLink to="/techs" title='Stack Tecnologico⚙️'>
           <Wrench size={30} strokeWidth={2}/>
         </NavLink>
-        <NavLink to="/projects">
+        <NavLink to="/projects" title='Proyectos📚'>
           <AppWindow size={30} strokeWidth={2}/>
         </NavLink>
-        <NavLink to="/contact">
+        <NavLink to="/contact" title='Contacto📩'>
           <MailPlus size={30} strokeWidth={2}/>
         </NavLink>
         <button className={styles.button_menu}>
