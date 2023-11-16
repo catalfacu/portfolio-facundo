@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './NavBar.module.css';
 import {NavLink} from 'react-router-dom';
-import {AlignJustify} from 'lucide-react';
+//import {AlignJustify} from 'lucide-react';
 import { Download } from 'lucide-react';
 import { User } from 'lucide-react';
 import { LibraryBig } from 'lucide-react';
