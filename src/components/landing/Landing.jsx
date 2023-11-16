@@ -39,7 +39,6 @@ const handleNavigate = () => {
           hatColor="green"
           lashes={false}
           lipColor="purple"
-          mask
           mouth="grin"
           skinTone="brown"
         />
