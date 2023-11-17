@@ -54,7 +54,7 @@ const data = [
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454073/portfolio/figma_boylku.png"
             },
             {
-                nombre: "Visual Studio Code",
+                nombre: "VSCode",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/vs_code_jkc2ci.png"
             },
         ],

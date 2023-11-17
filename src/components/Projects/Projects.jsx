@@ -16,7 +16,7 @@ const projects = data[0].projects;
                 projects
                 ? projects.map((el,index)=> {
                     return(
-                        <article className={styles.project}>
+                        <article className={styles.project} key={index}>
                             <div className={styles.project_text}>
                             <h2>{el.name}</h2>
                             <p>{el.description}</p>

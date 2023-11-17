@@ -1,6 +1,11 @@
 .container{
-    width: 100;
+    width: 100%;
     height: 100vh;
+    display: flex;
+}
+
+.container h1{
+    font-size: 60px;
 }
 
 .projects_container{
