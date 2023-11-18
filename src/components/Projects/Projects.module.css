@@ -24,30 +24,30 @@
     align-items: center;
     gap: 4rem;
     padding: 20px;
+    padding-right: 30px;
 }
 
 .project{
     width: 100%;
     height: fit-content;
-    border: 5px solid #93194B;
     border-radius: 2rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.5s;
 }
 
 .project_description{
     display: none;
 }
-
 .name_photo{
     position: relative;
-    height: fit-content;
-    width: 100%;
-    height: fit-content;
 }
 
 .name_photo h2{
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     color: #F5730A;
     font-size: 35px;
     z-index: 2;
@@ -58,7 +58,21 @@
     height: auto;
     opacity: 0.5;
     z-index: 1;
-    filter: grayscale(1);
-    border: transparent;
+    border: 4px solid #93194B;
     border-radius: 2rem;
+    filter: grayscale(1);
+}
+
+.project:hover{
+    transform: scale(1.1);
+
+    .name_photo h2{
+        visibility: hidden;
+    }
+    .name_photo img{
+        opacity: 1;
+        filter: none;
+        z-index: 2;
+    }
+
 }
