@@ -10,6 +10,7 @@ import { AppWindow } from 'lucide-react';
 import { MailPlus } from 'lucide-react';
 
 function navBar() {
+  const rutaArchivo = "/Facundo-Cataldo-CV.pdf";
   return (
     <div className={styles.container}>
       <nav className={styles.navbar}>
@@ -61,9 +62,14 @@ function navBar() {
         >
           <MailPlus size={30} strokeWidth={2} />
         </NavLink>
-        <button className={styles.button_menu} title="Descarga mi CV">
+        <a
+          className={styles.button_menu}
+          title="Descarga mi CV"
+          href={rutaArchivo}
+          download="Facundo-Cataldo-CV.pdf"
+        >
           <Download size={35} color="#7741c8" strokeWidth={2} />
-        </button>
+        </a>
       </nav>
     </div>
   );
