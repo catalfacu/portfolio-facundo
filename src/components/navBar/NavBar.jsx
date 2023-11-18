@@ -64,7 +64,7 @@ function navBar() {
         </NavLink>
         <a
           className={styles.button_menu}
-          title="Descarga mi CV"
+          title="Descarga mi CV📄"
           href={rutaArchivo}
           download="Facundo-Cataldo-CV.pdf"
         >
