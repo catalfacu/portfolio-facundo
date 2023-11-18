@@ -30,6 +30,7 @@
     width: 100%;
     height: fit-content;
     border: 5px solid #93194B;
+    border-radius: 2rem;
 }
 
 .project_description{
@@ -58,4 +59,6 @@
     opacity: 0.5;
     z-index: 1;
     filter: grayscale(1);
+    border: transparent;
+    border-radius: 2rem;
 }
