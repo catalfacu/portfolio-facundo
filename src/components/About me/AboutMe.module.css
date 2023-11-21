@@ -12,6 +12,7 @@
     font-size: 60px;
     letter-spacing: 5px;
     margin-right: 20px;
+    animation: easein 1s ease-out 3s both
 }
 
 .pictureAndText{
@@ -30,6 +31,8 @@
     width: 350px;
     height: 429px;
     border-radius: 2rem;
+    opacity: 0;
+    animation: easein 1s ease-in 1s both;
 }
 
 .text{
@@ -38,6 +41,7 @@
     line-height: 25px;
     padding: 30px;
     transition: transform 1s;
+    animation: easein 1.5s ease-in 2s both
 }
 
 .text:hover{
@@ -45,4 +49,15 @@
     padding: 30px;
     background-color: #F5730A;
     border-radius: 2rem;
+    z-index: 10;
+}
+
+@keyframes easein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
