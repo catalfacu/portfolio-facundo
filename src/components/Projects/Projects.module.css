@@ -4,75 +4,61 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .tittle{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-.tittle h1{
-    font-size: 60px;
-    letter-spacing: 5px;
-    margin-right: 20px;
+    margin-right: 50px;
+    font-size: 30px;
+    letter-spacing: 3px;
 }
 
 .projects_container{
-    width: 67%;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    padding: 20px;
-    padding-right: 30px;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: -20px;
+    gap: 3rem;
+    padding: 15px;
+
 }
 
 .project{
-    width: 100%;
-    height: fit-content;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 900px;
+    max-height: 400px;
+    padding: 20px;
+    gap: 2rem;
+    background-color: #00101f57;
+    border: 4px solid #D03A3D;
     border-radius: 2rem;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: transform 0.5s;
+    transition: transform 1s;
 }
 
-.project_description{
-    display: none;
-}
 .name_photo{
     position: relative;
 }
 
 .name_photo h2{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    color: #F5730A;
-    font-size: 35px;
+    top: 30%;
+    left: 32%;
+    transform: (-30%, -32%);
+    font-size: 40px;
     z-index: 2;
+    color: #F5730A;
 }
 
 .name_photo img{
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-    z-index: 1;
-    border: 4px solid #93194B;
-    border-radius: 2rem;
+    width: 500px;
     filter: grayscale(1);
+    opacity: 0.4;
+    z-index: 1;
 }
 
 .project:hover{
+    background-color: #00101f;
     transform: scale(1.1);
-
-    .name_photo h2{
-        visibility: hidden;
-    }
-    .name_photo img{
-        opacity: 1;
-        filter: none;
-        z-index: 2;
-    }
-
 }
