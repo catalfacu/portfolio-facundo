@@ -10,6 +10,7 @@
     margin-right: 20px;
     font-size: 60px;
     letter-spacing: 3px;
+    animation: easeinContact 1s ease-in-out 2.5s both;
 }
 
 .container span{
@@ -34,7 +35,7 @@
     background-color: #D03A3D;
     border-radius: 2rem;
     color: #4D1241;
-
+    animation: easeinContact 1s ease-in-out .5s both;
 }
 .form_container form{
     display: inline-flex;
@@ -62,7 +63,7 @@
     border: transparent;
     background-color:#4D1241;
     border-radius: 3rem;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
 }
 .form_container button:hover{
     background-color: #F5730A;
@@ -84,6 +85,7 @@
     color: #D03A3D;
     border-radius: 2rem;
     font-size: x-large;
+    animation: easeinContact 1s ease-in-out 1s both;
 }
 
 .other_forms h5{
@@ -94,6 +96,11 @@
 .social_container{
     display: inline-flex;
     gap:2rem;
+    animation: easeinContact 1s ease-in-out 1.5s both;
+}
+
+.calendar{
+    animation: easeinContact 1s ease-in-out 2s both;
 }
 
 .other_forms img:hover{
@@ -102,4 +109,14 @@
 -o-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
 -ms-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
 transform: scale(1) rotate(-5deg) translateX(10px) translateY(-15px) skewX(0deg) skewY(0deg);
+}
+
+
+@keyframes easeinContact {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }    
 }

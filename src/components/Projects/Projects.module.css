@@ -11,6 +11,7 @@
     margin-right: 50px;
     font-size: 30px;
     letter-spacing: 3px;
+    animation: easeinProjects 1s ease 1s both;
 }
 
 .projects_container{
@@ -20,6 +21,7 @@
     margin-top: -20px;
     gap: 3rem;
     padding: 15px;
+    animation: easeinProjects 1s ease .5s both;
 
 }
 
@@ -70,5 +72,14 @@
     }
     .name_photo h2{
         visibility: hidden;
+    }
+}
+
+@keyframes easeinProjects {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

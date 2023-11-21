@@ -12,6 +12,7 @@
     padding: 10px;
     margin-top: 10px;
     margin-right: 20px;
+    animation: easeinTechs 1s ease-in-out 1s both;
 }
 
 .Techs{
@@ -29,6 +30,7 @@
     border-radius: 2rem;
     padding: 10px;
     transition: transform 0.5s;
+    animation: easeinTechs 1s ease-in-out .5s both;
 }
 
 .tech:hover{
@@ -45,4 +47,14 @@
 .tech h2{
     letter-spacing: 3px;
     line-height: 3px;
+}
+
+
+@keyframes easeinTechs {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
