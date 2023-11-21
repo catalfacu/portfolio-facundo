@@ -80,7 +80,7 @@ const onSubmit = handleSubmit((data,e)=> {
                 name="message"
                 id="message"
                 cols="40"
-                rows="10"
+                rows="5"
                 {...register("message", {
                   required: {
                     value: true,
