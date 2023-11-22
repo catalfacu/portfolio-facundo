@@ -53,3 +53,25 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 950px) {
+
+    .container{
+        align-items: center;
+    }
+    .cards{
+        flex-direction: column;
+        height: 70%;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+
+    .card{
+        width: 300px;
+        transition: none;
+    }
+    .card:hover{
+        transform: none;
+    }
+    
+}
