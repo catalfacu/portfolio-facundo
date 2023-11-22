@@ -118,18 +118,6 @@ const onSubmit = handleSubmit((data,e)=> {
             )}
           </div>
 
-          <div className={styles.calendar}>
-            <a
-              href="https://calendly.com/cataldof21/entrevista-reunion"
-              target="blank"
-            >
-              <img
-                src="https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/g-calendar_gsupfp.png"
-                alt="calendar-logo"
-              />
-            </a>
-            <h5>Agenda Una Reunion!</h5>
-          </div>
         </div>
       </main>
     </div>

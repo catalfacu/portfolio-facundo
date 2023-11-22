@@ -74,6 +74,11 @@ const data = [
                 link: "https://github.com/catalfacu",
                 img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/mark-github-24_thryex.png"
             },
+            {
+                name: "Agenda una reunión",
+                link: "https://calendly.com/cataldof21/entrevista-reunion",
+                img: "https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693454072/portfolio/g-calendar_gsupfp.png"
+            }
         ],
         projects: [
             {

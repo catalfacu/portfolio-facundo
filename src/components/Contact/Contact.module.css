@@ -83,7 +83,6 @@
     padding: 1rem;
     border: transparent;
     color: #D03A3D;
-    border-radius: 2rem;
     font-size: x-large;
     animation: easeinContact 1s ease-in-out 1s both;
 }
@@ -99,9 +98,6 @@
     animation: easeinContact 1s ease-in-out 1.5s both;
 }
 
-.calendar{
-    animation: easeinContact 1s ease-in-out 2s both;
-}
 
 .other_forms img:hover{
 -moz-transform: scale(1.5) rotate(-5deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -119,4 +115,51 @@ transform: scale(1) rotate(-5deg) translateX(10px) translateY(-15px) skewX(0deg)
     to{
         opacity: 1;
     }    
+}
+
+@media screen and (max-width: 837px) {
+    
+    .container{
+        align-items: center;
+    }
+
+    .container span{
+        font-size: x-small;
+    }
+
+    .contact_container{
+        width: 100%;
+    }
+
+    .form_container{
+        width: 70%;
+        height: 100%;
+    }
+
+    .form_container form{
+        width: 70%;
+    }
+    .form_container label{
+        font-size: small;
+    }
+    .form_container input,textarea{
+        width: 100%;
+    }
+    .form_container button{
+        font-size: medium;
+    }
+
+    .other_forms h2{
+        display: none;
+    }
+    .other_forms img{
+        width: 35px;
+    }
+
+    .social_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0
+    }
 }

@@ -88,9 +88,17 @@
         width: 50%;
         height: 200px;
         overflow: scroll;
+        overflow-x: hidden;
     }
 
     .pictureAndText p::-webkit-scrollbar{
         width: 5px;
+    }
+    .pictureAndText p::-webkit-scrollbar-track{
+        background-color: #93194c00;
+    }
+    .pictureAndText p::-webkit-scrollbar-thumb{
+        background-color: #93194B;
+        border-radius: 3rem;
     }
 }
