@@ -48,3 +48,21 @@
     }
 
 }
+
+
+@media screen and (max-width: 990px) {
+    .container{
+        width: 100%;
+        height: fit-content;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .navbar{
+        flex-direction: row;
+        align-items: first baseline;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    
+}

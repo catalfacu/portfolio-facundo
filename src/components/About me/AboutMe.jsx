@@ -9,7 +9,7 @@ const text = data[0].text;
     <div className={styles.container}>
       <h1>Sobre Mi!</h1>
       <div className={styles.pictureAndText}>
-        <p className={styles.text}>{text}</p>
+        <p>{text}</p>
         <img
           src="https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693009925/portfolio/Dise%C3%B1o_sin_t%C3%ADtulo_xiqvpx.png"
           alt="foto-facu"
