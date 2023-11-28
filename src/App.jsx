@@ -10,14 +10,9 @@ import Projects from "./components/Projects/Projects";
 
 function App() {
 
-  const location = useLocation();
-
   return (
     <>
-    {
-      location.pathname !== "/" && <NavBar/>
-    }
-    
+    <NavBar/>
     <Routes>
       <Route path='/' element={<Landing/>}/>
       <Route path='/aboutme' element={<AboutMe/>}/>

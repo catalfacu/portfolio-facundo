@@ -1,22 +1,28 @@
 import React from 'react';
 import styles from './NavBar.module.css';
 import {NavLink} from 'react-router-dom';
-//import {AlignJustify} from 'lucide-react';
 import { Download } from 'lucide-react';
 import { User } from 'lucide-react';
 import { LibraryBig } from 'lucide-react';
 import { Wrench } from 'lucide-react';
 import { AppWindow } from 'lucide-react';
 import { MailPlus } from 'lucide-react';
+import { Home } from 'lucide-react';
 
 function navBar() {
   const rutaArchivo = "/Facundo-Cataldo-CV.pdf";
   return (
     <div className={styles.container}>
       <nav className={styles.navbar}>
-        <button className={styles.button_menu}>
-          {/* <AlignJustify size={30} color="#7741c8" strokeWidth={2} /> */}
-        </button>
+        <NavLink
+          to="/"
+          title="Inicio💛"
+          className={({ isActive, isPending }) =>
+            isPending ? styles.pending : isActive ? styles.active : ""
+          }
+        >
+          <Home size={30} strokeWidth={2} />
+        </NavLink>
         <NavLink
           to="/aboutme"
           title="Sobre Mi!🧑🏽‍💻"
