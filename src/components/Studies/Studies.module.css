@@ -57,12 +57,12 @@
 @media screen and (max-width: 950px) {
 
     .container{
-        align-items: center;
+        align-items: flex-end;
     }
     .cards{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 70%;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-right: 0px;
     }
 

@@ -16,7 +16,7 @@
         grid-area: 5 / 5 / 8 / 7;
         z-index: 2;
         opacity: 0;
-        animation: fadeIn 3s ease 2s both;
+        animation: fadeIn 3s ease 1s both;
 }
 
 .texts { 
@@ -47,7 +47,7 @@
     width: fit-content;
     padding: 10px;
     background-color: #00101F;
-    border: 4px solid #F5730A;
+    border: 4px solid #D03A3D;
     border-radius: 3rem;
     color: whitesmoke;
     transition: background 0.5s;
@@ -55,7 +55,7 @@
 
 .texts button:hover{
     cursor: pointer;
-    background-color: #F5730A;
+    background-color: #D03A3D;
 }
 
 .frases { 
@@ -63,14 +63,14 @@
     z-index: 10;
     height: fit-content;
     font-size: large;
-    border: 4px solid #F5730A;
+    border: 4px solid #D03A3D;
     border-radius: 3rem;
     background-color: #00101F;
-    color: #F5730A;
+    color: whitesmoke;
     margin-bottom: 20px;
     margin-right: 10px;
     opacity: 0;
-    animation: fadeIn 5s ease 3s both;
+    animation: fadeIn 5s ease 1.5s both;
 }
 
 

@@ -26,7 +26,7 @@
 
 .tech{
     border: 3px solid #4D1241;
-    background-color: #93194c6e;
+    background-color: #d03a3dad;
     border-radius: 2rem;
     padding: 10px;
     transition: transform 0.5s;
@@ -35,7 +35,7 @@
 
 .tech:hover{
     transform: scale(1.3);
-    background-color: #93194c;
+    background-color: #D03A3D;
     border: 2px double #F5730A;
     z-index: 2
 }

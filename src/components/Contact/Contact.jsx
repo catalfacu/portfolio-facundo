@@ -3,9 +3,6 @@ import {useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 import data from '../Helpers/Data';
-const SERVICE_ID = import.meta.env.VITE_REACT_APP_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
 
 
 function Contact() {
@@ -16,7 +13,7 @@ const form = useRef();
 const onSubmit = handleSubmit((data,e)=> {
   console.log(data);
   e.preventDefault();
-  emailjs.sendForm(SERVICE_ID,TEMPLATE_ID,form.current,PUBLIC_KEY)
+  emailjs.sendForm("service_5u83jdh","template_k4qsxwa",form.current,"aXLbnFlE_pO3SacXk")
   .then((result)=>{
     console.log(result.text);
   }, (error)=> {

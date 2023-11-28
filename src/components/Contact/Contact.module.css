@@ -93,8 +93,9 @@
 }
 
 .social_container{
-    display: inline-flex;
-    gap:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     animation: easeinContact 1s ease-in-out 1.5s both;
 }
 
@@ -120,7 +121,7 @@ transform: scale(1) rotate(-5deg) translateX(10px) translateY(-15px) skewX(0deg)
 @media screen and (max-width: 837px) {
     
     .container{
-        align-items: center;
+        align-items: flex-end;
     }
 
     .container span{
