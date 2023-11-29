@@ -8,7 +8,7 @@ import data from '../Helpers/Data';
 
 function Contact() {
 const socialMedia = data[0].socialMedia;
-const { register,handleSubmit,formState: {errors} ,watch } = useForm();
+const { register,handleSubmit,formState: {errors},reset } = useForm();
 const form = useRef();
 
 const onSubmit = handleSubmit((data,e)=> {
@@ -19,6 +19,7 @@ const onSubmit = handleSubmit((data,e)=> {
     toast.success(`${result.text}: Mensaje enviado con exito👍🏽`, {
       position: "top-right",
     });
+    reset();
   }, (error)=> {
     toast.error(`${error.text}: Algo salio mal😢`,{
       position:'top-right'
