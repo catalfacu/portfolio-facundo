@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import {useForm} from 'react-hook-form';
+import toast, {Toaster} from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 import data from '../Helpers/Data';
@@ -15,12 +16,15 @@ const onSubmit = handleSubmit((data,e)=> {
   e.preventDefault();
   emailjs.sendForm("service_5u83jdh","template_k4qsxwa",form.current,"aXLbnFlE_pO3SacXk")
   .then((result)=>{
-    console.log(result.text);
+    toast.success(`${result.text}: Mensaje enviado con exito👍🏽`, {
+      position: "top-right",
+    });
   }, (error)=> {
-    console.log(error.text);
+    toast.error(`${error.text}: Algo salio mal😢`,{
+      position:'top-right'
+    });
   });
 });
-
 
   return (
     <div className={styles.container}>
@@ -93,6 +97,17 @@ const onSubmit = handleSubmit((data,e)=> {
             </section>
 
             <button>Enviar</button>
+            <Toaster toastOptions={{success:{
+              style:{
+                border: "4px solid green",
+                padding: "20px"
+              }
+            },error:{
+              style: {
+                border: "4px solid red",
+                padding: "20px"
+              }
+            }}}/>
           </form>
         </div>
 
