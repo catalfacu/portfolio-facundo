@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Landing.module.css";
-import { BigHead } from '@bigheads/core'
+import Avatar from '../Helpers/Avatar';
 import { useNavigate } from 'react-router-dom';
 
 function Landing() {
@@ -10,48 +10,28 @@ const handleNavigate = () => {
 }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.texts}>
+    <main className={styles.container}>
+
+      <section className={styles.containerTexts}>
+
+        <span className={styles.textsAndAvatar}>
         <h1>Facundo Nicolas Cataldo</h1>
+        <div className={styles.avatar}>
+        <Avatar/>
+        </div>        
+        </span>
+
         <h2>
-          Fullstack developer || Javascript || React || Node || Express ||
-          PostgreSQL || Sequelize
+          Fullstack developer <hr />| Javascript || React || Node || Express ||
+          PostgreSQL || Sequelize |
         </h2>
+      </section>
+
+      <section className={styles.buttonDownload}>
         <button onClick={handleNavigate}>Comencemos!</button>
-      </div>
-
-      <div className={styles.avatar}>
-        <BigHead
-          accessory="roundGlasses"
-          body="chest"
-          circleColor="blue"
-          clothing="shirt"
-          clothingColor="black"
-          eyebrows="raised"
-          eyes="normal"
-          faceMask={false}
-          faceMaskColor="red"
-          facialHair="none3"
-          graphic="react"
-          hair="buzz"
-          hairColor="black"
-          hat="none"
-          hatColor="green"
-          lashes={false}
-          lipColor="purple"
-          mouth="grin"
-          skinTone="brown"
-        />
-      </div>
-
-      <div className={styles.frases}>
-        <p>
-          "No necesitas ser un genio para escribir código,
-          <br /> solo necesitas ser apasionado." <br />- Ralph Johnson
-        </p>
-      </div>
+      </section>
       
-    </div>
+    </main>
   );
 }
 
