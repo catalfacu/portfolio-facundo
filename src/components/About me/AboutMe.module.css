@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-start;
     position: relative;
 }
 
@@ -29,28 +30,28 @@
 }
 
 .texts{
-    width: 50%;
-    height: 100%;
+    max-width: 50%;
+    max-height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     gap: 2rem;
     text-align: center;
-    /* animation: easein 1s ease-out 2.5s both ; */
+    animation: easein 1s ease-out 2.5s both ;
 }
 .text{
-    width: 60%;
-    height: 10%;
+    max-width: 60%;
+    height: 70px;
     overflow: hidden;
     background-color: #D03A3D;
     border-radius: 2rem;
-    /* transition:  transform ease .5s; */
+    transition: transform ease .5s;
 
 }
 
 .text:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     height: fit-content;
     padding: 10px;
     text-wrap: pretty;
