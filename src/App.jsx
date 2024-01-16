@@ -4,7 +4,6 @@ import Studies from "./components/Studies/Studies";
 import Techs from "./components/Techs/Techs";
 import Contact from "./components/Contact/Contact";
 import NavBar from "./components/navBar/NavBar";
-import {Routes, Route} from 'react-router-dom';
 import Projects from "./components/Projects/Projects";
 
 
@@ -13,14 +12,32 @@ function App() {
   return (
     <>
     <NavBar/>
-    <Routes>
-      <Route path='/' element={<Landing/>}/>
-      <Route path='/aboutme' element={<AboutMe/>}/>
-      <Route path='/studies' element={<Studies/>}/>
-      <Route path='/projects' element={<Projects/>}/>
-      <Route path='/techs' element={<Techs/>}/>
-      <Route path="/Contact" element={<Contact/>}/>
-    </Routes>
+
+    <section id="landingPage">
+    <Landing/>
+    </section>
+
+    <section id="aboutMe">
+    <AboutMe/>
+    </section>
+
+    <section id="studies">
+    <Studies/>
+    </section>
+
+    <section id="techs">
+    <Techs/>
+    </section>
+
+    <section id="projects">
+    <Projects/>
+    </section>
+
+    <section id="contact">
+    <Contact/>
+    </section>
+    
+    <footer>Desarrollado por Facundo Cataldo -2024-</footer>
     </>
   )
 }

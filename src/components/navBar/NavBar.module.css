@@ -22,6 +22,7 @@
 }
 
 .navbar a{
+    color: #7741c8;
     transition: transform 0.5s;
 }
 .navbar a:hover{
