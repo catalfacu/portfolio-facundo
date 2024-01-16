@@ -85,7 +85,7 @@
     background-color: #D03A3D;
 }
 
-p{
+.container p{
     width: fit-content;
     height: fit-content;
     font-size: large;
