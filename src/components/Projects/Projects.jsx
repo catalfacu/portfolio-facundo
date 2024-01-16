@@ -7,9 +7,7 @@ const projects = data[0].projects;
 
   return (
     <div className={styles.container}>
-      <div className={styles.tittle}>
         <h1>Mis Proyectos!</h1>
-      </div>
 
       <div className={styles.projects_container}>
         {projects ? (

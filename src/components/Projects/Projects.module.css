@@ -7,10 +7,12 @@
     justify-content: flex-start;
 }
 
-.tittle{
+.container h1{
+    font-size: 90px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: 400;
     margin-right: 50px;
-    font-size: 30px;
-    letter-spacing: 3px;
     animation: easeinProjects 1s ease 1s both;
 }
 
@@ -88,22 +90,29 @@
 @media screen and (max-width: 1090px) {
 
     .container{
-        align-items: flex-end;
+        max-width: 100%;
+        align-items: center;
+    }
+    .container h1{
+        margin: 0;
     }
 
     .projects_container{
-        align-items: flex-end;
+        align-items: center;
+        margin: 0;
     }
 
     .project{
-        width: 70%;
-        height: 30%;
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .name_photo{
-        width: 60%;
+        max-width: 100%;
+        height: auto;
     }
 
     .name_photo h2{
@@ -111,13 +120,14 @@
     }
 
     .name_photo img{
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .project_description{
-        width: 50%;
+        max-width: 100%;
         height: 100%;
-        text-align: center;
+        text-align: justify;
         overflow: scroll;
         overflow-x: hidden;
     }
