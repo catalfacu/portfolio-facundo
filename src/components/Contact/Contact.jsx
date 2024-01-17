@@ -122,7 +122,6 @@ const onSubmit = handleSubmit((data,e)=> {
                     <a href={el.link} target="blank">
                       <img src={el.img} alt={el.name} />
                     </a>
-                    <h5>{el.name}</h5>
                   </article>
                 );
               })
