@@ -35,10 +35,10 @@ function Landing() {
     <main className={styles.container}>
       <section className={styles.containerTexts}>
         <span className={styles.textsAndAvatar}>
-          <h1>Facundo Nicolas Cataldo</h1>
           <div className={styles.avatar}>
             <Avatar />
           </div>
+          <h1>Facundo Nicolas Cataldo</h1>
         </span>
 
         <h2>
