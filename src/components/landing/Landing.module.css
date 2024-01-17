@@ -115,7 +115,7 @@
 }
 
 
-@media screen and (min-width: 412px) and (max-width: 965px) {
+@media screen and (min-width: 320px) and (max-width: 965px) {
 
     .container{
      display: flex;

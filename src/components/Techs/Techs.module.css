@@ -13,7 +13,7 @@
     font-weight: 400;
     padding: 10px;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 50px;
     animation: easeinTechs 1s ease-in-out 1s both;
 }
 
@@ -63,11 +63,16 @@
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 320px) and (max-width: 950px) {
     .container{
         max-width: 100%;
+        height: fit-content;
         justify-content: center;
         align-items: center;
+    }
+
+    .container h1{
+        font-size: 12vw;
     }
 
     .Techs{

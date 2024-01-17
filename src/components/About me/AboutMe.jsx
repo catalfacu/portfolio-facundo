@@ -24,12 +24,13 @@ function AboutMe() {
           </section>
           <span>Nota: pasa el mouse por cada titulo para saber más!😉.</span>
         </article>
-      
+
+        <div className={styles.photo}>
         <img
           src="https://res.cloudinary.com/dmgkhl6ys/image/upload/v1693009925/portfolio/Dise%C3%B1o_sin_t%C3%ADtulo_xiqvpx.png"
           alt="foto-facu"
-          className={styles.photo}
         />
+        </div>
       </div>
        
     </div>

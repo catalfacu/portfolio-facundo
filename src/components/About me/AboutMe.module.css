@@ -62,13 +62,16 @@
 .photo{
     width: 350px;
     height: 300px;
-    border-radius: 50%;
-    border: 4px solid #D03A3D;
     margin-right: 50px;
     animation: easein 1s ease-in .5s both;
 }
 
-
+.photo img{
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #D03A3D;
+}
 
 @keyframes easein {
     from{
@@ -80,16 +83,21 @@
     
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (min-width:320px) and (max-width: 728px) {
 
     .container{
         max-width: 100%;
         height: fit-content;
-        justify-content: center;
-        align-items: center;
+        margin: 0;
+        padding: 0;
+        border: 1px solid red;
     }
     .container span{
         display: none;
+    }
+
+    .container h1{
+        font-size: 12vw;
     }
 
     .aboutContainer{
@@ -102,6 +110,13 @@
     .photo{
         max-width: 100%;
         max-height: auto;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .photo img{
+        max-width: 90vw;
+        height: auto;
     }
 
     .texts{
