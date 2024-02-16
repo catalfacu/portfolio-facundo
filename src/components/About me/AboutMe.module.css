@@ -4,12 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
-    position: relative;
+    margin-bottom: 130px;
 }
 
 .container h1{
-    display: inline-block;
     font-size: 90px;
     font-style: normal;
     font-weight: 400;

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css';
 import data from '../Helpers/Data';
+import { Link, Github } from 'lucide-react';
 
 function Projects() {
 const projects = data[0].projects;
@@ -14,13 +15,29 @@ const projects = data[0].projects;
           projects.map((el, index) => {
             return (
               <article className={styles.project} key={index}>
-                <div className={styles.name_photo}>
+
+                <section className={styles.photoAndLinks}>
+                  <img src={el.img} alt={el.name} />
+                  <div className={styles.links}>
+                    <a href={el.link}>
+                      <Link size={60} strokeWidth={2} />
+                    </a>
+                    <a href={el.gitHub}>
+                      <Github size={60} strokeWidth={2} />
+                    </a>
+                  </div>
+                </section>
+
                 <h2>{el.name}</h2>
-                <img src={el.img} alt={el.name} />
-                </div>
-                <div className={styles.project_description}>
-                  <p>{el.description}</p>
-                </div>
+
+                <section className={styles.usedTechs}>
+                  <h3>Tecnologías Utilizadas: </h3>
+                  <div className={styles.techsLogos}>
+                    {el.techs?.map((tech, index)=>(
+                      <img src={tech} alt="icono" key={index}/>
+                    ))}
+                  </div>
+                </section>
               </article>
             );
           })

@@ -21,6 +21,7 @@ const studies = data[0].estudios;
           ? studies.map((study,index)=>{
             return(
               <VerticalTimelineElement
+                key={index}
                 date={study.Duracion}
                 icon={<Book/>}
                 iconStyle={{background:'#D03A3D'}}
