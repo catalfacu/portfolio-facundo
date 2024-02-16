@@ -19,10 +19,10 @@ const projects = data[0].projects;
                 <section className={styles.photoAndLinks}>
                   <img src={el.img} alt={el.name} />
                   <div className={styles.links}>
-                    <a href={el.link}>
+                    <a href={el.link} target='blank'>
                       <Link size={60} strokeWidth={2} />
                     </a>
-                    <a href={el.gitHub}>
+                    <a href={el.gitHub} target='blank'>
                       <Github size={60} strokeWidth={2} />
                     </a>
                   </div>

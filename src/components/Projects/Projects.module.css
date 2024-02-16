@@ -158,38 +158,20 @@
         align-items: center;
     }
 
-    .name_photo{
+    .photoAndLinks img{
         max-width: 100%;
         height: auto;
     }
 
-    .name_photo h2{
-        left: 20%
+    .photoAndLinks div{
+        left: 10%;
     }
-
-    .name_photo img{
+    .links{
         max-width: 100%;
-        height: auto;
     }
 
-    .project_description{
+    .techsLogos{
         max-width: 100%;
-        height: 100%;
-        text-align: justify;
-        overflow: scroll;
-        overflow-x: hidden;
-    }
-
-    .project_description::-webkit-scrollbar{
-        width: 15px;
-    }
-    .project_description::-webkit-scrollbar-track{
-        background-color: #D03A3D;
-        border-radius: 2rem;
-    } 
-    .project_description::-webkit-scrollbar-thumb{
-        background-color: #140021;
-        border-radius: 2rem;
     }
 }
 
@@ -199,12 +181,4 @@
         width: 90%;
     }
 
-    .name_photo h2{
-        left: 0;
-        top: 0;
-        font-size: medium;
-    }
-    .project_description{
-        font-size: smaller;
-    }
 }

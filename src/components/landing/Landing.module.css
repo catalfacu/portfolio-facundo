@@ -126,6 +126,12 @@
      max-width: 100%;   
     }
 
+    .container p{
+        font-size: 4vw;
+        margin-top: 20vw;
+        margin-right: -35vw;
+    }
+
     .textsAndAvatar{
         width: fit-content;
         max-height: 100%;
@@ -139,7 +145,7 @@
         font-size: 6vw;
         flex-direction: column;
         max-width: 100%;
-        max-height: 40%;
+        max-height: 25%;
         background-color: #d03a3d;
         border: transparent;
         border-radius: 10px;
@@ -149,9 +155,9 @@
     }
 
     .avatar{
-        width: 50%;
+        width: 80%;
         top: -85px;
-        left: 25%;
+        left: 12%;
         z-index: 0;
     }   
 
@@ -165,11 +171,20 @@
     }
 
     .containerTexts h2{
-        max-width: 70%;
+        max-width: 100%;
         height: auto;
-        margin-top: -100px;
-        font-size: 2vw;
+        margin-top: -115px;
+        font-size: 3vw;
     }
 
+    .buttonDownload{
+        max-width: 100%;
+        height: auto;
+        animation: bounce infinite 2s ease both;
+    }
+
+    .buttonDownload button{
+        font-size: 5vw;
+    }
 
 }
